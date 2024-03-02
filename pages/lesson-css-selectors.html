@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Selectors</title>
+    <style>
+      /* 1. Element selector */
+      h2 {
+        color: blue;
+      }
+
+      /* 2. ID selector */
+      #main-heading {
+        color: brown;
+      }
+
+      /* 3. Class selector */
+      .heading-selector {
+        color: red;
+      }
+
+      /* 4. Attribute selector */
+      input[type="text"] {
+        background-color: aquamarine;
+      }
+
+      /* 5. Pseudo class selector */
+      button:hover {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* 6. Pesudo element selector */
+      p::first-line {
+        color: blue;
+        font-weight: bold;
+      }
+
+      /* 7. Descendant selector (Whitespace combinator) */
+      div h4 {
+        color: coral;
+      }
+
+      div div h4 {
+        color: darkcyan;
+      }
+
+      /* 8. Child selector (>)
+      Selects all <h5> elements that are immediate children of <div> elements */
+      div > h5 {
+        font-weight: bold;
+        font-style: italic;
+        color: red;
+      }
+
+      /* 9. Adjacent sibling seclector (+)
+      Select the <p> element that is immediately preceded by an <h2> element */
+      h2 + p {
+        background-color: yellow;
+      }
+
+      /* 10. General sibling selector (~)
+      Selects all <p> elements that are siblings of an <h3> element */
+      h3 ~ p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    ======= 1. Element selector ======
+
+    <h2>Element selector</h2>
+
+    ======= 2. ID selector ========
+
+    <h2 id="main-heading">ID Selector</h2>
+
+    ====== 3. Class selector =======
+
+    <h2 class="heading-selector">Class selector</h2>
+    <h5 class="heading-selector">Class selector</h5>
+    <h6 class="heading-selector">Class selector</h6>
+
+    ======== 4. Attribute selector =======
+
+    <br />
+    <input type="text" placeholder="Enter your full name" />
+    <br />
+    <input type="number" placeholder="Enter your age" />
+    <br />
+
+    ========= 5. Pseudo classes selector ======
+
+    <br />
+    <button>Clcik Here</button>
+    <br />
+
+    ========= 6. Pseudo elements selector =====
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod
+      molestias id recusandae minus eos voluptates illo, magni consectetur, iure
+      enim commodi! Nobis, inventore obcaecati. Facilis, voluptatem eos deserunt
+      exercitationem nesciunt repellat rerum dolores porro minima iste non
+      veniam ipsa harum assumenda fugit velit corrupti cumque rem necessitatibus
+      quia tenetur.
+    </p>
+
+    ======== 7. Descendant selector (White-space combinator) ==========
+
+    <div>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        sint hic voluptates adipisci eius, nostrum ullam vitae dignissimos
+        reiciendis? Reprehenderit deserunt voluptatem omnis voluptas. Iste
+        voluptates nihil rerum porro temporibus.
+      </h4>
+      <div>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+          tenetur maiores repudiandae earum culpa quam, magni similique ad
+          laborum nihil inventore possimus ex dolorum, veritatis soluta
+          voluptates. Veritatis, quisquam qui.
+        </h4>
+      </div>
+    </div>
+
+    ======== 8. Child selector (>) ======
+
+    <div>
+      <h5>Java</h5>
+      <h5>Python</h5>
+      <h5>Javascript</h5>
+      <h5>Typescript</h5>
+    </div>
+
+    ======= 9. Adjacent sibling selector (+) ======
+    <h2>Heading 2</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, neque.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, neque.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, neque.
+    </p>
+
+    ========== 10. General sibling selector (~) =========
+
+    <h3>Heading 3</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+      labore recusandae velit nihil, facilis excepturi quidem voluptatum iure
+      praesentium tempore sequi tenetur, rerum earum! Praesentium pariatur cum
+      in harum. Beatae?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ab veritatis
+      velit nostrum aperiam voluptates culpa quam porro adipisci asperiores
+      consequuntur id eius, explicabo, temporibus dolorem impedit consectetur
+      unde iure.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, corporis
+      aspernatur minima labore porro earum obcaecati, nostrum quidem quas autem
+      iusto praesentium tempora voluptate nam nesciunt blanditiis ullam error.
+      Dolorem!
+    </p>
+  </body>
+</html>

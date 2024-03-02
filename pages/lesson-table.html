@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - Tables</title>
+    <style>
+      table {
+        border: 1px solid black;
+        width: 500px;
+      }
+      th {
+        border: 1px solid red;
+        background-color: aquamarine;
+      }
+      td {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Simple HTML Table -->
+    <p>====== Simple HTML Table =====</p>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>9819237981</td>
+          <td>john.doe@gmail.com</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Yashith</td>
+          <td>Chanuka</td>
+          <td>0773627367</td>
+          <td>yashith.chanugmail.com</td>
+          <td>Galle</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <!-- Table with head, body, foot -->
+    <p>====== Table with head, body & foot =====</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Qty</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>1</td>
+          <td>Rs. 100.00</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>2</td>
+          <td>Rs. 200.00</td>
+        </tr>
+        <tr>
+          <td>Pineapple</td>
+          <td>1</td>
+          <td>Rs. 300.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td>Rs. 600.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+
+    <!-- Table Colspan -->
+    <p>======= Table Colspan ==========</p>
+    <table style="width: 400px; text-align: center">
+      <tr style="height: 100px">
+        <td colspan="2">1</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>5</td>
+        <td colspan="3">6</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>9</td>
+        <td colspan="2">10</td>
+        <td>12</td>
+      </tr>
+      <tr style="height: 100px">
+        <td colspan="4">13</td>
+      </tr>
+    </table>
+
+    <!-- Table Rowspan -->
+    <p>========== Table Rowspan ===========</p>
+    <table style="width: 400px; text-align: center">
+      <tr style="height: 100px">
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr style="height: 100px">
+        <td rowspan="3">6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+      </tr>
+      <tr style="height: 100px">
+        <td rowspan="2">9</td>
+        <td>11</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>15</td>
+      </tr>
+    </table>
+  </body>
+</html>
