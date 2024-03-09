@@ -1,78 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-FlexBox</title>
-    <style>
-        .container{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: 3px;
-        }
-        .box{
-            width: 1px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-        }
-
-        .box1{
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-            background-color: thistle;
-        }
-
-        .box2{
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-            background-color: wheat;
-        }
-
-        .box3{
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-            background-color: slateblue;
-        }
-
-        .box4{
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-            background-color: powderblue;
-        }
-
-        .box5{
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            text-align: center;
-            border-radius: 12px;
-            background-color: salmon;
-        }
-    </style>
+    <title>flexbox exercise</title>
 </head>
+<style>
+    body {
+        background-color: rgb(170, 151, 226);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Review {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(231, 215, 250);
+        gap: 20px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .reviews {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        gap: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+
 <body>
+    <h1>Customer Reviews</h1>
+
     <div class="container">
-    <div class="box box1">1</div>
-    <div class="box box2">2</div>
-    <div class="box box3">3</div>
-    <div class="box box4">4</div>
-    <div class="box box5">5</div>
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt="" width="100px" height="100px">Rashini Vithanage
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt="" width="100px" height="100px">Ashan Naveen
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Nipun Nishamaheeka
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Sandun Dilshan
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Nimashi Dewanmini
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Sasmith Manawadu
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Vihanga Gaganatharu
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Amal Perera
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Tharaka Supun
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Chethana Nethmini
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
+
+        <div class="Review"><img src="/assets/20240107_201444.jpg" alt=""width="100px" height="100px">Heshani Liyadipita
+            <div>
+                <p class="reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quaerat
+                    alias consequatur quia! Eaque architecto blanditiis ipsum molestiae sequi provident cum sint quidem
+                    eligendi quia. Laboriosam provident quibusdam distinctio!</p>
+            </div>
+        </div>
     </div>
+
 </body>
+
 </html>
