@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css grid layout</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Grid Layout</title>
     <style>
-        .container {
-            display: grid;
-            grid-template-columns: 20% 20% 20%;
-            grid-template-columns: 1fr, 2fr, 1fr;
-        }
+      .container {
+        display: grid;
+        /* grid-template-columns: 20% 20% 20% 20% 20%; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: repeat(1, 1fr 2fr 1fr);
 
-        .container>div{
-            border: 1px solid navy;
-        }
-
-        .container
+        /* column-gap: 12px;
+        row-gap: 12px; */
+        gap: 12px;
+      }
+      .container > div {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      /* .container > div:nth-child(even) {
+        background-color: wheat;
+      } */
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .nested > div {
+        border: 1px solid black;
+        padding: 8px;
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia
-            molestias aspernatur.
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum
-            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
-            aspernatur.
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum
-            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
-            aspernatur.
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum
-            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
-            aspernatur.
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum
-            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
-            aspernatur.
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
-            laborum
-            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
-            aspernatur.
-
-        </div>
-
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis illo, accusantium ex saepe
-             adipisci soluta error vero corporis earum facere neque possimus molestiae voluptatibus sint natus sequi, 
-             doloremque pariatur!
-            
-        </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div class="nested">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi?
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
