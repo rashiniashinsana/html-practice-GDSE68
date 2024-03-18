@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Transitions</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: darkslateblue;
+            margin: 200px auto;
+            /* all transiting elements */
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 2ms;
+        
+
+        }
+
+        .box:hover{
+            width: 200px;
+            background-color: violet;
+        }
+
+        h1{
+            transition: all 3s linear;
+    
+        }
+
+        h1:hover{
+            font-style:  rgb(22, 86, 134);
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+     <h1>Hello World!!!</h1>
+    <div class="box">
+    </div>
+</body>
+</html>

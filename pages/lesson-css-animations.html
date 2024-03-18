@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><Lesson-CSS-Animations></title>
+    <style>
+      .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin-top: 100px;
+        margin-left: 100px;
+        animation-name: square;
+        /* animation-duration: 5s;*/
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation: up-down 3s linear infinite;
+        /* animation: square 10s linear infinite; */
+      }
+
+      .box:hover {
+        width: 100px;
+        height: 100px;
+      }
+
+      @keyframes up-down {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-32px);
+        }
+        100% {
+          transform: translateY(32px);
+        }
+      }
+      @keyframes square {
+        0% {
+          background-color: rgb(153, 231, 205);
+          border-radius: 5%;
+          position: relative;
+          top: 100px;
+          left: 100px;
+          transform: scale(1);
+          animation: up-down 5s linear infinite;
+        }
+
+        25% {
+          background-color: rgb(91, 196, 161);
+          border-radius: 10%;
+          position: relative;
+          top: 100px;
+          left: 500px;
+          transform: scale(2);
+          animation: up-down 3s linear infinite;
+        }
+
+        50% {
+          background-color: rgb(39, 84, 69);
+          border-radius: 20%;
+          position: relative;
+          top: 500px;
+          left: 500px;
+          transform: scale(3);
+          animation: up-down 1s linear infinite;
+        }
+
+        75% {
+          background-color: rgb(56, 119, 98);
+          border-radius: 40%;
+          position: relative;
+          top: 500px;
+          left: 100px;
+          transform: scale(4);
+          animation: up-down 1ms linear infinite;
+        }
+
+        100% {
+          background-color: rgb(18, 32, 27);
+          border-radius: 50%;
+          position: relative;
+          top: 100px;
+          left: 100px;
+          transform: scale(5);
+          animation: up-down 3ms linear infinite;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"><div class="box"></div></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>
