@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-6</title>
+    <style>
+      .container {
+        grid-template-columns: repeat(6, 1fr);
+        display: grid;
+        gap: 20px;
+      }
+      /* 575*/
+      @media screen and (min-width: 0px) and (max-width: 575px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      /* 576-767 == 2 cards */
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* 768-991 == 3 cards */
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* 992-1199 == 4 cards */
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      /* 1200-1399 ==  5 cards*/
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      /* 1400 == 6 cards */
+      @media screen and (min-width: 1400px) {
+        .container {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+
+      .box {
+        width: 500px;
+        height: 500px;
+        margin: 10px;
+        background-color: rgb(175, 203, 147);
+        padding: 10px;
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: rgb(5, 6, 4);
+      }
+
+      .box1 {
+        width: 450px;
+        height: 100px;
+        margin: 20px;
+        background-color: rgb(124, 86, 36);
+        padding: 5px;
+      }
+
+      .box2 {
+        display: flex;
+        width: 75px;
+        height: 75px;
+        margin: 10px;
+        background-color: burlywood;
+        border-radius: 50px;
+
+        justify-content: space-between;
+      }
+
+      .box3 {
+        /* width: 75px;
+                height: 75px; */
+        /* margin-left: 350px; */
+        /* margin-bottom: 100px; */
+        padding-left: 280px;
+      }
+
+      .box4 {
+
+        width: 420px;
+        height: 300px;
+        margin: 15px;
+        background-color: aqua;
+        border-radius: 25px;
+        padding: 25px;
+      }
+      .img1 {
+        width: 75px;
+        height: 75px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+      }
+      .img2 {
+        width: 75px;
+        height: 75px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      p {
+        float: inline-start;
+      }
+
+      p1 {
+        float: right;
+      }
+
+      .scrollable-review{
+        max-height: 150px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Reviews</h1>
+    <div class="container">
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3">
+              <img src="/assets/rating.png" class="img2" />
+            </div>
+          </div>
+        </div>
+        <div class="box4">
+          <p>
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3"><img src="/assets/rating.png" class="img2" /></div>
+          </div>
+        </div>
+        <div class="box4">
+          <p class="scrollable-review">
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3"><img src="/assets/rating.png" class="img2" /></div>
+          </div>
+        </div>
+        <div class="box4">
+          <p>
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3"><img src="/assets/rating.png" class="img2" /></div>
+          </div>
+        </div>
+        <div class="box4">
+          <p>
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3"><img src="/assets/rating.png" class="img2" /></div>
+          </div>
+        </div>
+        <div class="box4">
+          <p>
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box1">
+          <div class="box2">
+            <img src="/assets/hotline.png" class="img1" />
+            <div class="box3"><img src="/assets/rating.png" class="img2" /></div>
+          </div>
+        </div>
+        <div class="box4">
+          <p>
+            <br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Recusandae quibusdam minus error at culpa impedit sed aperiam
+            exercitationem laboriosam ad explicabo corrupti, aut tempore, iste,
+            saepe labore facere eius totam!
+          </p>
+          <p1>Rashini Vithnage</p1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <title>Lesson-CSS-Quaries2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .header{
+            display: flex;
+            /* vertically */
+            align-items: center; 
+            background-color: blue;
+            /* space hdnna */
+            justify-content: space-between;
+            padding: 12px;
+
+        }
+
+        .navbar > a { 
+            margin: 0 12px;
+            text-decoration: none;
+            color: blueviolet;
+
+        }
+
+        @media screen and (max-width) {
+            .navbar .menu-icon{
+                display: block;
+            }
+
+            .navbar a {
+                display: none;
+            }
+            
+        }
+        /* .body1{
+            display: flex;
+            background-color: thistle;
+            align-items: center;
+        
+
+
+        }
+
+        .box2{
+            display: flex;
+            width: 75px;
+            height: 75px;
+            background-color: cornflowerblue;
+            border-radius: 50px;
+            margin: 10px;
+
+        } */
+
+        /* .box3{
+            display: flex;
+            width: 75px;
+            height: 75px;
+            margin: 10px;
+            background-color: burlywood;
+            border-radius: 50px;
+
+            justify-content: space-between;
+
+        } */
+
+        /* .box4{
+            display: flex;
+            width: 75px;
+            height: 75px;
+            
+            background-color: darkslateblue;
+            border-radius: 25px;
+            padding-left: 280px;
+        }
+        .img{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            align-items: center;
+            justify-content: space-between;
+        } */
+        
+    </style>
+</head>
+<body>
+    <header >
+        
+        <div>LOGO</div>
+            <nav class="navbar" id="menuBar">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                </nav>
+            <!-- <div class="box2"><img src="/assets/woman (1).png" class="img"></div>
+            <div class="box3"></div> -->
+        
+        <!-- <div class="body1"></div> -->
+
+    </header>
+    
+   
+</body>
+</html>
