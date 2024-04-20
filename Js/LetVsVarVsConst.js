@@ -40,3 +40,14 @@ function iterateConstNumber() {
   console.log(i);
 }
 iterateConstNumber();
+
+
+function addNumber(){
+  if(a=1){
+    let a = abc
+
+
+  }
+  console.log(a);
+}
+addNumber();

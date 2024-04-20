@@ -47,3 +47,13 @@ function greeting(firstName, lastName) {
 
 let greetingValueReturned = greeting("Nisal", "Perera");
 console.log("returnedGreetingValue :", greetingValueReturned); //undefined
+
+
+//Converting Named Functions To Arrow Functions 
+
+const addNumber = (num1, num2) => num1 + num2
+console.log(addNumber(10,20))
+
+
+//Converting callbackFunctions To Arrow Functions
+
