@@ -1,6 +1,9 @@
 //============variable hoisting with var keyword==========
+
+
+
 console.log(number)
-var number = 100;
+var number = 100;              //Functional Scope         
 
 
 //within var, variable declaratons are hoisted to the top of their containing function
@@ -10,11 +13,11 @@ var number = 100;
 
 
 //===========variable hoisting with let keyword============
-console.log(firstName)
+console.log(firstName)                      //Block Scope
 let firstName = 'Kamal'
 
 
 //===========variable hoisting with const keyword==========
 
-console.log(lastName)
+console.log(lastName)                    //Block Scope
 const lastName = 'Perera'

@@ -1,3 +1,4 @@
+//Literal type
 let student ={}
 console.log('Student : ' , typeof student)
 console.log('Type of student : ', typeof student)
@@ -20,3 +21,29 @@ console.log("Student Email (Using square brackets notation): ", student ['email'
 student.age = 20;
 console.log('Student age : ', student.age )
 console.log("Student : ", student)
+
+
+//===============
+console.log('============')
+
+let person ={
+    name: 'Kamal',
+    age: 20,
+    greeting:() => {
+        console.log('Good Morning')
+    }
+}
+
+console.log(person.greet())
+console.log('=======');
+
+//iterating over properties
+
+for(let key in person){
+    console.log(key+':'+person[key]);
+
+}
+console.log(person.age);
+console.log(person['age']);
+
+
