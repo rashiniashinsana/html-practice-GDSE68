@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events</title>
+    <style>
+        #box{
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- <script src="/Js/EventsJQuery.js"></script> -->
+     <script>
+        // $("#box").on(function(){
+        // $('#box').css('background-color','red');
+        // });
+
+          
+
+        // $("#box").mouseout(function(){
+        // $('#box').css('border-color','yellow');
+        // });
+
+        
+
+        $( "#box" ).on( "mouseover", function() {
+        $( "#box" ).css( "background-color",'pink' );
+        } );
+
+        
+        $( "#box" ).on( "mouseout", function() {
+        $( "#box" ).css( "background-color",'lightgreen' );
+        } );
+
+
+     </script>
+
+</body>
+</html>

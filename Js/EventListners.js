@@ -43,6 +43,28 @@ document.getElementById('myForm').addEventListener('submit',(event)=>{
     console.log('Form Submitted!')
 })
 
+
+
+//======Numbers Only============
+
+document.getElementById('number Input').addEventListener('keydown',function(event){
+    console.log.event.keyCode
+    if (event.keyCode >= 48 && event.keyCode <=57) {
+        
+    } else {
+        event.preventDefault()
+
+        alert('numbers only')
+        
+    }
+})
+
+
+
+
+
+
+
 // document.getElementById('box').addEventListener('mouseout',()=>{
 //     console.log('mouse out')
 // })
